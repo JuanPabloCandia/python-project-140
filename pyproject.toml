@@ -10,8 +10,13 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.7"  # Cambiado a >=3.7 para ser compatible con prompt_toolkit
+python = ">=3.9,<4.0"
+  # Aumenta la versión mínima de Python
 prompt_toolkit = "^3.0.48"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+wemake-python-styleguide = "^0.19.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -19,3 +24,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^7.1.1"  # Añade flake8 aquí si es necesario
