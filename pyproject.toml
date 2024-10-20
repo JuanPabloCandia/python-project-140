@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "codica-code"
+version = "1"
+description = "test"
+authors = ["juan"]
+license = "1"
+readme = "README.md"
+packages = [
+  { include = "brain_games" },
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
