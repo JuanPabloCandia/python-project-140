@@ -1,19 +1,21 @@
 [tool.poetry]
 name = "codica-code"
-version = "1"
+version = "1.0.0"
 description = "test"
 authors = ["juan"]
-license = "1"
+license = "MIT"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
 
+[tool.poetry.dependencies]
+python = ">=3.7"  # Cambiado a >=3.7 para ser compatible con prompt_toolkit
+prompt_toolkit = "^3.0.48"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-
