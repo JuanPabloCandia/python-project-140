@@ -1,11 +1,12 @@
 [project]
-name = "hexlet-code"
+name = "python-l1-brain-games2-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
-
+dependencies = [
+    "hexlet-code",
+]
 [tool.uv]
 dev-dependencies = [
     "ruff>=0.8.0",
