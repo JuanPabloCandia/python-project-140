@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'bin/brain-games', type: :aruba do
   before(:each) do
-    file_path = File.expand_path('../bin/brain-games', __dir__)
+    file_path = File.expand_path('../code/brain_games/scripts/brain-games', __dir__)
     expect(File).to exist(file_path)
     run_command file_path
   end
