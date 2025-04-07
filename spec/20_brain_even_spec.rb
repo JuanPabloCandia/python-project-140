@@ -9,7 +9,7 @@ RSpec.describe 'bin/brain-even', type: :aruba do
   let(:regexp) { /Question: (\-?\d+)/ }
 
   before(:each) do
-    file_path = File.expand_path('../.venv/bin/brain-even', __dir__)
+    file_path = File.expand_path('../.venv/lib/brain-even', __dir__)
     expect(File).to exist(file_path)
     run_command file_path
   end
