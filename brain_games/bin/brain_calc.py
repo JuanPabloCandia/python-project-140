@@ -5,12 +5,12 @@
 
 import sys
 
-from brain_games import engine, games
+from brain_games.games import engine, calc
 
 
 def main():
     """Run a game."""
-    engine.run(games.calc)
+    engine.run(calc)
 
 
 if __name__ == '__main__':
