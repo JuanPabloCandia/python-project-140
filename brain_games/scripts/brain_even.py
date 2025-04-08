@@ -5,7 +5,7 @@
 
 import sys
 
-from brain_games.games import engine, games
+from brain_games.games import engine, even
 
 
 def main():
