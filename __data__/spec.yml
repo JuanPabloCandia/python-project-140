@@ -1,0 +1,10 @@
+---
+
+project:
+  language: python
+  name: "Juegos mentales"
+  link: https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
+  summary: "Aprende a configurar el entorno de Python, usar gestores de dependencias y linters, y trabajar con git/GitHub. Adquiere experiencia en arquitectura de aplicaciones y código limpio."
+  artifacts:
+    - spec
+    - ruff.toml
