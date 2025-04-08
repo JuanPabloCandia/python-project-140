@@ -1,11 +1,15 @@
 require 'spec_helper'
 
 RSpec.describe 'bin/brain-games', type: :aruba do
+  let(:file_path) { File.expand_path('../.venv/bin/brain-games', __dir__) }
+
   before(:each) do
-    file_path = File.expand_path('../.venv/bin/brain-games', __dir__)
-    expect(File).to exist(file_path)
+    unless File.exist?(file_path)
+      raise "El archivo ejecutable no se encuentra en la ruta esperada: #{file_path}"
+    end
     run_command file_path
   end
+
   before(:each) do
     expect(last_command_started).not_to be_stopped
     type('Tirion')
