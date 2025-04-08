@@ -1,7 +1,12 @@
+# filepath: c:\Users\Digital Optimizer\Desktop\python-project-140-main\spec\10_brain_games_spec.rb
 require 'spec_helper'
 
 RSpec.describe 'bin/brain-games', type: :aruba do
-  let(:file_path) { File.expand_path('../.venv/bin/brain-games', __dir__) }
+  let(:file_path) do
+    base_dir = File.expand_path('../.venv', __dir__)
+    executable_dir = File::ALT_SEPARATOR ? 'Scripts' : 'bin' # Detecta Windows o Unix/Linux
+    File.join(base_dir, executable_dir, 'brain-games')
+  end
 
   before(:each) do
     unless File.exist?(file_path)
