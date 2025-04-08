@@ -5,7 +5,7 @@
 
 import sys
 
-from brain_games import cli
+from brain_games.games import cli
 
 
 def main():
